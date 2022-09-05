@@ -30,7 +30,7 @@
 
 <body>
   <header class="header">
-    <nav class="js-header-navbar">
+    <nav data-navbar="suave">
       <ul class="navbar__list">
         <li><a class="navbar__link" href="#heavyMetal">Heavy Metal</a></li>
         <li><a class="navbar__link" href="#faq">Faq</a></li>
@@ -41,9 +41,9 @@
   </header>
 
   <main class="container-grid">
-    <section class="grid heavy-Metal js-scroll" id="heavyMetal">
+    <section class="grid heavy-Metal" data-anime="scroll" id="heavyMetal">
       <h1 class="heading-primary">Paranauê <span>do Heavy Metal</span></h1>
-      <ul class="heavy-metal-Lista js-tabmenu">
+      <ul class="heavy-metal-Lista" data-tab="menu">
         <li>
           <img src="img/black-metal.jpg">
         </li>
@@ -64,8 +64,8 @@
         </li>
       </ul>
 
-      <div class="heavy-metal-descricao js-tabcontent">
-        <section>
+      <div class="heavy-metal-descricao" data-tab="content">
+        <section data-anime="show-right">
           <h2>Black metal</h2>
           <p>
             Black metal é uma vertente extrema do heavy metal que surgiu nos anos 80 e que foi evoluindo ao longo dos anos.
@@ -78,7 +78,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Death metal</h2>
           <p>
             Death metal é um subgênero do heavy metal. Tipicamente agrega guitarras com baixas afinações e muito distorcidas, tocadas com técnicas como palm muting e tremolo picking, vocais guturais, bateria tocada de maneira potente, uso de pedal duplo ou técnica de blast beat, alguns teclados ou atonalidade, ritmo rápido e mudanças abruptas de tempo.
@@ -91,7 +91,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Doom metal</h2>
           <p>
             Doom metal é um sub-género do heavy metal caracterizado por andamentos lentos e guitarras "sujas", que evocam um clima sombrio e apavorante.
@@ -104,7 +104,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Power metal</h2>
           <p>
             Power metal é um subgênero do heavy metal que combina características do metal tradicional com speed metal, muitas vezes com forte influência da música clássica. Geralmente, o power metal é caracterizado por um som mais animado, em contraste ao peso e dissonância prevalecentes em estilos como Thrash Metal, doom metal e death metal.
@@ -117,7 +117,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Speed metal</h2>
           <p>
             Speed metal é uma definição de subgênero do heavy metal que floresceu no fim dos anos 70, sendo o progenitor direto dos estilos thrash metal, metal neoclássico e power metal. É extremamente rápido, abrasivo e tecnicamente exigente.
@@ -127,7 +127,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-right">
           <h2>Thrash metal</h2>
           <p>
             Thrash metal é um subgênero do heavy metal caracterizado por seu ritmo rápido e agressividade. As canções usualmente têm batidas rápidas e riffs de guitarra que regem a música, intercalados com solos ao estilo shred. As letras normalmente tratam de problemas sociais e repudiam o rígido controle do Estado, usando linguagem forte e direta, similarmente ao que acontece no gênero hardcore.
@@ -142,9 +142,9 @@
       </div>
     </section>
 
-    <section class="grid faq js-scroll" id="faq">
+    <section class="grid faq" data-anime="scroll" id="faq">
       <h2 class="heading-secondary">FAQ</h2>
-      <dl class="faq-lista js-accordion">
+      <dl class="faq-lista" data-anime="accordion">
         <dt>Esse site está completo?</dt>
         <dd>Não está, ainda em desenvolvimento.</dd>
         <dt>Porque o título do site se chama paranauê do heavy metal?</dt>
@@ -156,7 +156,7 @@
       </dl>
     </section>
 
-    <section class="grid contato js-scroll" id="contato">
+    <section class="grid contato" data-anime="scroll" id="contato">
       <h2 class="heading-secondary">Contato</h2>
       <div class="contato__mapa">
         <img src="img/mapa.png">
