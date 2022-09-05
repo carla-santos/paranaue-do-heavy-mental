@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <!-- JavaScript -->
   <script>document.documentElement.className += ' js';</script>
-  <script defer src="js/main.js"></script>
+  <script type="module" defer src="js/main.js"></script>
   <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -32,10 +32,18 @@
   <header class="header">
     <nav data-navbar="suave">
       <ul class="navbar__list">
-        <li><a class="navbar__link" href="#heavyMetal">Heavy Metal</a></li>
-        <li><a class="navbar__link" href="#faq">Faq</a></li>
-        <li><a class="navbar__link" href="#contato">Contato</a></li>
-        <li><a class="navbar__link" href="#">Login </a></li>
+        <li>
+          <a class="navbar__link" href="#heavyMetal">Heavy Metal</a>
+        </li>
+        <li>
+          <a class="navbar__link" href="#faq">Faq</a>
+        </li>
+        <li>
+          <a class="navbar__link" href="#contato">Contato</a>
+        </li>
+        <li>
+          <a data-modal="abrir" class="navbar__link" href="login.html">Login →</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -173,6 +181,20 @@
   <footer class="footer">
     <p>Paranauê do heavy metal &copy;2022</p>
   </footer>
+
+  <!-- Modal -->
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
