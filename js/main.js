@@ -45,7 +45,7 @@ function initAccordion() {
 initAccordion();
 
 function initScrollSuave() {
-  const linksInternos = document.querySelectorAll('.js-header-navbar a[href^="#"]');
+  const linksInternos = document.querySelectorAll('[data-navbar="suave"] a[href^="#"]');
 
   function scrollToSection(event) {
     event.preventDefault();
@@ -64,7 +64,7 @@ function initScrollSuave() {
 initScrollSuave();
 
 function initAnimacaoScroll() {
-  const sections = document.querySelectorAll('.js-scroll');
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.6;
 
