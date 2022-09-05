@@ -32,20 +32,20 @@
   margin-left: 3rem;
 }
 
-.js .js-accordion dd {
+.js [data-anime='accordion'] dd {
   display: none;
 }
 
-.js-accordion dt::after {
+[data-anime='accordion'] dt::after {
   content: '⬎';
   margin-left: 1rem;
 }
 
-.js-accordion dt.ativo::after {
+[data-anime='accordion'] dt.ativo::after {
   content: '⬏';
 }
 
-.js-accordion dd.ativo {
+[data-anime='accordion'] dd.ativo {
   display: block;
   animation: slideDown 0.5s forwards;
 }
